@@ -33,7 +33,7 @@
 ### Database
 <hr>
 
-![alt image of database](./planning/schema01.png "Current Database: ")
+![alt image of database](planning/schema01.png "Current Database: ")
 
 
 
