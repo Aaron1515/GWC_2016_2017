@@ -1,54 +1,179 @@
+<h1 id="center">Communities Page</h1>
 
+<h3 id="center">Hobbies</h3>
 
-<!DOCTYPE html>
+<!-- Trigger/Open The Modal -->
+<button class="hobbies-button" id="myBtn">Hobbies Choices</button>
 
-
-<header>
-
-	<link rel="stylesheet" type="text/css" href="c_s_s.css">
-
-	<script src="Impact_project/p5.min.js."></script>
-
-	<title>
-		Communities Page
-	</title>
-
-</header>
-
-<body>
-
-<h1 id="title">Communities Page</h1>
-
-<a href="hobbies.html"><img id="width" class="img-circle" src="http://mamiverse.com/wp-content/uploads/2016/06/Happy-Hobbies-15-Leisure-Activities-to-Make-You-Smile-MainPhoto.jpg">
+<a href="GWC_Impact_project_hobbies.html">
+	<img id="width" class="img-circle" src="http://mamiverse.com/wp-content/uploads/2016/06/Happy-Hobbies-15-Leisure-Activities-to-Make-You-Smile-MainPhoto.jpg">
 </a>
 
+<h3 id="center">Interest</h3>
 
-<a href=""><img id="width" class="img-circle" src="http://domain.me/wp-content/uploads/2014/11/interests-logo.png">
+<a href="#">
+	<img id="width" class="img-circle" src="http://domain.me/wp-content/uploads/2014/11/interests-logo.png">
 </a>
 
-<a href=""><img id="width" class="img-circle" src="http://images.huffingtonpost.com/2015-09-23-1443029669-9258368-Dollarphotoclub_75515307.jpg">
+<h3 id="center">Disibilities</h3>
+
+<a href="#">
+	<img id="width" class="img-circle" src="http://images.huffingtonpost.com/2015-09-23-1443029669-9258368-Dollarphotoclub_75515307.jpg">
 </a>
 
-</body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-</html>
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span class="close">&times;</span>
+  <p>
+
+  <h2 id="center">Hobbies</h3>
+
+  <h3>Ball Sports</h3>
+
+  <form action="/action_page.php" method="get">
+	  <input type="checkbox" > Basketball<br>
+	  <input type="checkbox" > Soccer<br>
+	  <input type="checkbox" > Football<br>
+	  <input type="checkbox" > Badminton<br>
+	  <input type="checkbox" > Tennis<br>
+	  <input type="checkbox" > Golf<br>
+	  <input type="checkbox" > Cricket<br>
+	  <input type="checkbox" > Bowling<br>
+  </form>
+
+  <h2>Snow Sports</h2>
+
+	<form action="/action_page.php" method="get">
+	  <input type="checkbox" > Ice Skating<br>
+	  <input type="checkbox" > Ice Hockey<br>
+	  <input type="checkbox" > Snow Boarding<br>
+	  <input type="checkbox" > Sledding<br>
+	  <input type="checkbox" > Skiing<br> 
+  </form>
+
+  <h2>Water Sports</h2>
+
+	<form action="/action_page.php" method="get">
+	  <input type="checkbox" > Diving<br>
+	  <input type="checkbox" > Swimming<br>
+	  <input type="checkbox" > Water Polo<br>
+  </form>
+
+  <h2>Dance</h2>
+
+  <form action="/action_page.php" method="get">
+  	<input type="checkbox" > Jazz<br>
+	  <input type="checkbox" > Ballet<br>
+	  <input type="checkbox" > Gymnastics<br>
+	  <input type="checkbox" > Lyrical<br>
+	  <input type="checkbox" > Tribal<br>
+	  <input type="checkbox" > Hip-Hop<br>
+	  <input type="checkbox" > Country<br>
+	  <input type="checkbox" > Modern<br>
+	  <input type="checkbox" > Hip-Hop<br>
+	  <input type="checkbox" > Pole<br>
+  </form>
+
+    </p>
+  </div>
+
+</div>
+
+
+<!-- CSS  -->
+<style>
+	/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*.close:hover,*/
+
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img-circle {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+
+}
+
+#width {
+	width: 750px;
+}
+
+#center {
+	text-align: center;
+}
+
+.hobbies-button {
+	allignModal()
+
+</style>
 
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="c_s_s.css">
-	<title>Hobbies</title>
-</head>
-<body>
+<!-- JavaScript -->
+<script>
+console.log("hi")
+	// Get the modal
+var modal = document.getElementById('myModal');
 
-<h1 id="center">Hobbies!</h1>
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-<a href="Outdoor.html"><img id="width" class="img-circle" src="http://maxpixel.freegreatpicture.com/static/photo/1x/Idyllic-Landscape-Nature-Outdoor-Spring-Flora-1232776.jpg"></a>
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-<a href="indoor.html"><img id="width" class="img-circle" src="http://www.coolgarden.me/wp-content/uploads/2013/02/indoor-plants.jpg"></a>
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
 
-</body>
-</html>
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
