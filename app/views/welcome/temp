@@ -1,0 +1,318 @@
+<!-- If logged in -->
+<% if @user %>
+
+
+<style>
+  body{
+    background-color: pink;
+  }
+
+  #Name {
+      font-family:gigi;
+      color:rgb(110, 110, 110);
+      font-size:56px;
+      text-align:center;
+  }
+
+  #Entire {
+     background-color:rgb(224, 146, 224);
+     margin-top:20%;
+
+  }
+  #tagline{
+       background-color:rgb(190, 139, 207);
+       margin-top:-35px;
+  }
+
+  #anotherone{
+  text-align:center; 
+  font-size:12;
+  font-family:impact;
+  color:rgb(71, 71, 71);
+  }
+
+  #BLAH {
+     background-color:rgb(151, 212, 217);
+     margin-top:-166px;
+  }
+
+  #YA {
+     background-color:rgb(102, 180, 196);
+     margin-top: 191px;
+  }
+
+  #ANOTHER{
+  background-color:rgb(102, 180, 196);  
+  }
+
+  #Toppings{
+  margin-top: -313px;
+  background-color:white;
+  border-radius:8px;
+  }
+
+  .top{
+  display:inline-block; 
+  margin-left:120px;
+  }
+
+  #profile-pic{
+  margin-left: 360px;
+  margin-top: -225px;
+  }
+
+  #friendzone{
+  margin-top: -1200px;
+  margin-left: 450px;
+  font-size: 100px;  
+  }
+  #facts{
+     margin-top:580px;
+     background-color:white;
+     margin-right:700px;
+     border-radius:10px;
+  }
+  #Sandy{
+  margin-top:350px; 
+  margin-left:50px;
+
+  }
+  #Something {
+  margin-top:-225px;
+  margin-left: 675px;
+  }
+
+  #Lalala {
+    margin-left: 310px;
+    margin-top:-223px;
+  }
+
+</style>
+        
+
+
+<!--Profile name and intro-->
+
+<div id = "Entire">
+    <h1 id="Name">[Name Here]</h1>
+</div>
+
+<div id="tagline">
+    <p id="anotherone">
+    "If your feeling suicidal, you've come to the right place."-Filthy Frank
+    </p> 
+</div>
+
+<div id = "BLAH">
+    <p id = "ANOTHER">
+    .
+    </p>
+  <div id = "YA">
+      <p>
+      .
+      </p>
+  </div>
+</div>
+
+<!--Facts about people-->
+<div id="Toppings">
+<p class="top"><a href="#Home"><u>Home</u></a></p>
+<p class="top"><a href="#Profile"><u>Profile</u></a></p>
+<p class="top"><a href="#Communities"><u>Communities</u></a></p>
+<p class="top"><a href="#Settings"><u>Settings</u></a></p>
+<p class="top"><a href="#Chatrooms"><u>Chatrooms</u></a></p>
+<p class="top"><a href="#Donate/Contact"><u>Donate/Contact</u></a></p>
+</div>
+<div id="facts">    
+<h1> Facts </h1>
+<ul>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>   
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>   
+  <li>things</li>
+  <li>things</li> 
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>   
+  <li>things</li>
+  <li>things</li> 
+</ul>
+</div>
+
+   
+<!--Name of site-->    
+<p id="friendzone">Sharing Hands</p>
+
+  <div id = "Sandy">
+  <img src="http://intuitivecreativity.typepad.com/.a/6a00d83451dc5b69e201bb087309e5970d-pi" width="300" height="220">
+  </div>
+
+   <div id="profile-pic">
+  <img src="http://www.immotourisme.com/location-gerance/wp-content/uploads/2016/04/1470.jpg" width="300" height="220">
+  </div>
+
+  <div id="Something">
+  <img src="http://fanaru.com/konosuba-gods-blessing-on-this-wonderful-world/image/255644-konosuba-gods-blessing-on-this-wonderful-world-megumin-explosion.jpg" width="300" height="220">
+
+  <div id="Lalala">
+  <img src="https://img.clipartfest.com/31f25adb273153ce00d7bb64bc39a5ee_whats-coding-got-to-do-with-coding_1920-1200.jpeg" width="300" height="220">
+  </div>
+
+</div>
+     
+
+
+
+<%= link_to "sign out", destroy_user_session_url, method: :delete %>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- New user view or not logged in -->
+<% else %>
+
+  <div class="relative"> 
+  <div class="absolute"> HEYBERRY 
+  </div> 
+  </div>
+
+  <h4> Welcome to Heyberry </h4>
+    
+  <div class="info"><p> Do you ever feel lonely, hopeless, or invisible? That nobody is there for you? That even despite everything you do, nobody is ever there to help you out, or just be a friend? <br> <br> The HeyBerry Community is dedicated to giving you endless support. We are here for you, and will help you make friends and gain supporters. <br> <p> We are never alone…. </p></p></div>
+    
+
+
+  <!-- Rails Magic starts here for log in  -->
+  <div class="login">
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.label :password %><br />
+  <%= f.password_field :password %></div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%>
+
+  <div><%= f.submit "Sign in" %></div>
+  <% end %>
+
+  <!-- Sign up link -->
+  <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+  <% end -%>
+
+  <!-- Forgot password link -->
+  <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+  <% end -%>
+
+  <!-- Resend confirmation -->
+  <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+  <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+  <% end -%>
+
+  <!-- Resend instruction for password reset -->
+  <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
+  <% end -%>
+
+  <%- if devise_mapping.omniauthable? %>
+    <%- resource_class.omniauth_providers.each do |provider| %>
+      <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
+    <% end -%>
+  <% end -%>
+  
+</div>
+
+
+
+
+
+
+  <!-- Start of CSS -->
+  <style>
+    #Info  {
+      font-family: Arial;
+      color:rgb(0,0,0);
+    }
+
+    h4 {
+      color: rgb(255,147,26);
+      font-family: Bebas Neue;
+      font-size: 25px;
+    }
+
+    div.relative {
+      position: relative;
+      border: 3px solid #FF931A;
+      background-color: #FF931A;
+      padding-bottom: 35px; 
+      padding-left: 8px; 
+      padding-right: 8px; 
+      padding-top: 8px;"
+    } 
+
+    div.absolute {
+      position: relative;
+      top: 12px;
+      right: 2px;
+      border: 8px solid #ffffff;
+      background-color: #6fd9be;
+      font-family: Bebas Neue;
+      color:rgb(255,255,255);
+      font-size:100px;
+      margin-left: 20px; 
+      margin-right: 20px; 
+      padding-bottom: 8px; 
+      padding-left: 8px; 
+      padding-right: 8px;
+      padding-top: 8px;
+      text-align:center;
+    }
+
+    div.info{
+      background-color:#ffffff; 
+      border: 4px solid #FABB1D;
+      margin-left: 20px; 
+      margin-right: 20px; 
+      padding-bottom: 8px; 
+      padding-left: 8px; 
+      padding-right: 8px; 
+      padding-top: 8px;
+    }
+
+    div.login{
+      background-color:#ffffff; 
+      border: 4px solid #FABB1D;
+      margin-top: 20px;
+      margin-left: 20px; 
+      margin-right: 20px; 
+      padding-bottom: 8px; 
+      padding-left: 8px; 
+      padding-right: 8px; 
+      padding-top: 10px;
+    }
+  </style>
+  
+<% end %>
