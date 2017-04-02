@@ -4,4 +4,8 @@ class WelcomeController < ApplicationController
   		@user = current_user
   	end
   end
+
+  def community
+  end
+  
 end
