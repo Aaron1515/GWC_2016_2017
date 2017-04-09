@@ -1,81 +1,4 @@
-<h2>Welcome to Sharing Hands! Here's the first step in signing up...</h2>
-
-<div>
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
-
-    <div class="email_field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, class: "input_text" %>
-    </div>
-
-    <div class="password_field">
-      <%= f.label :password %>
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "off", class: "input_text" %>
-    </div>
-
-    <div class="password_field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off", class: "input_text" %>
-    </div>
-
-    <div class="actions submit_btn">
-      <%= f.submit "Sign up" %>
-    </div>
-  <% end %>
-</div>
-<%= render "devise/shared/links" %>
-
-
-
-
 <style>
-
-
-
-/*Rails code*/
-
-
-
-  .input_text, select {
-    width: 100%;
-    padding:12px 20px;
-    padding right:50px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid #ccc;
-    transition: 0.3s;
-    outline: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-    border-color: #f88379;
-  }
-
-  .input_text:focus {
-    border: 3px solid #fdd9d6;
-  }
-
-
-
-  .submit_btn {
-    width: 100%;
-    background-color: #fff588;
-    color: white;
-    padding: 0;
-    margin: 0;
-    border:none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .submit_btn:hover {
-    background-color:#f88379
-  }
-
-
 
   h2{
     color:#ffffff;
@@ -140,9 +63,6 @@ body{
 
 
 
-<!-- 
-
-Code from GWC
 
 <h2>Welcome to Sharing Hands! Here's the first step in signing up...</h2>
 
@@ -180,4 +100,3 @@ Code from GWC
    <input type="submit" value="Submit">
   </form>
 </div>
- -->
