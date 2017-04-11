@@ -4,7 +4,10 @@
 
 
   <style>
-  body{background-color: pink;}
+
+  body{
+    background-color: pink;
+  }
 
   #Name {
       font-family:gigi;
@@ -80,12 +83,7 @@
   }
 
   #logo{text-align: center;
-      margin-top:-770px;}
-
-  #signout{
-    margin-left: 1270px;
-    margin-top: -225px;
-  }   
+      margin-top:-770px;} 
 
   </style>
         
@@ -111,15 +109,14 @@
 
 
   <div id="Toppings">
-  <p class="top"><u><%= link_to "Home", welcome_index_path %></u></p>
+<p class="top"><u><%= link_to "Profile", welcome_index_path %></u></p>
   <!-- <p class="top"><a href="#Home"><u>Home</u></a></p> -->
-  <p class="top"><a href="#Profile"><u>Profile</u></a></p>
   <p class="top"><u><%= link_to "Communities", welcome_community_path %></u></p>
   <!-- <p class="top"><a href="#Communities"><u>Communities</u></a></p> -->
   <p class="top"><a href="#Settings"><u>Settings</u></a></p>
   <p class="top"><a href="#Chatrooms"><u>Chatrooms</u></a></p>
   <p class="top"><a href="#Donate/Contact"><u>Donate/Contact</u></a></p>
-  <p class="top"><%= link_to "sign out", destroy_user_session_url, method: :delete %></p>
+  <p class="top"><%= link_to "Sign out", destroy_user_session_url, method: :delete %></p>
   </div>
 
 
@@ -174,14 +171,6 @@
     <img src="https://d1b10bmlvqabco.cloudfront.net/attach/iud12iv5jgu334/iu7z8oqsvsu1h2/j0r8u33rfov6/imageedit_1_9215536154.png" width="300" height="300">
     </div>
     </div> 
-
-
-
-
-
-
-
-
 
 
 <!--Start of Tawk.to Script-->
