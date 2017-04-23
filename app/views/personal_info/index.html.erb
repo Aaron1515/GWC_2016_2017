@@ -1,0 +1,103 @@
+
+<!-- CSS -->
+<style>
+
+  h2{
+    color:#ffffff;
+    margin: 8px 2px;
+    display: inline-block;
+    border: 5px solid #00a9c2;
+    outline: none;
+    border-radius:2px;
+    width:99%;
+    background:#00a9c2;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding:12px 20px;
+    padding right:50px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    transition: 0.3s;
+    outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #f88379;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid #fdd9d6;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #fff588;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color:#f88379
+  }
+
+  div {
+    border-radius: 5px;
+    background-color:#e9f5f8;
+    padding: 20px;
+  }
+
+body{
+  background-color:#f0f0f0;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<!-- HTML -->
+<h2>Onto the next step...</h2>
+<h3>Why don't you tell us a little bit about you...</h3>
+
+<div>
+  <form action="/action_page.php">
+      
+      <label for="age">Age</label>
+    	<select id="age" name="Age">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="18+">18+</option>
+    </select>
+    
+     <label for="gender">Gender</label>
+    <select id="gender" name="Age">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="lname">Disability</label>
+    <input type="text" id="disability" name="disability" placeholder="Your disability...">
+
+   <input type="submit" value="Submit">
+  </form>
+</div>
