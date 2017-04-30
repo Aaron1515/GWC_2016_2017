@@ -104,6 +104,8 @@
         <% end %>
     </div>
 
+
+
     <div id="tagline">
         <p id="anotherone">
         "If your feeling suicidal, you've come to the right place."-Filthy Frank
@@ -123,13 +125,13 @@
 
 
   <div id="Toppings">
-<p class="top"><u><%= link_to "Profile", welcome_index_path %></u></p>
-  <!-- <p class="top"><a href="#Home"><u>Home</u></a></p> -->
-  <p class="top"><u><%= link_to "Communities", welcome_community_path %></u></p>
-  <p class="top"><u><%= link_to "Personal Info", edit_personal_info_path(@user) %></u></p>
-  <p class="top"><a href="#Chatrooms"><u>Chatrooms</u></a></p>
-  <p class="top"><a href="#Donate/Contact"><u>Donate/Contact</u></a></p>
-  <p class="top"><%= link_to "Sign out", destroy_user_session_url, method: :delete %></p>
+    <p class="top"><u><%= link_to "Profile", welcome_index_path %></u></p>
+    <!-- <p class="top"><a href="#Home"><u>Home</u></a></p> -->
+    <p class="top"><u><%= link_to "Communities", welcome_community_path %></u></p>
+    <p class="top"><u><%= link_to "Personal Info", personal_info_index_path %></u></p>
+    <p class="top"><a href="#Chatrooms"><u>Chatrooms</u></a></p>
+    <p class="top"><a href="#Donate/Contact"><u>Donate/Contact</u></a></p>
+    <p class="top"><%= link_to "Sign out", destroy_user_session_url, method: :delete %></p>
   </div>
 
 
@@ -183,6 +185,22 @@
     
     </div>
     </div> 
+
+    Testing Random Qoutes
+    <script type="text/javascript">
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    var qoutes = ["Don't cry because it's over, smile because it happened. ― Dr. Seuss", "If your feeling suicidal, you've come to the right place. -Filthy Frank", "Be yourself; everyone else is already taken. ― Oscar Wilde", 'You only live once, but if you do it right, once is enough. ― Mae West', 'Be the change that you wish to see in the world. ― Mahatma Gandhi', "In three words I can sum up everything  I've learned about life: it goes on. ― Robert Frost"];
+
+
+    var qoute_number = getRandomInt(0, qoutes.length);
+
+    document.getElementById("anotherone").innerHTML = qoutes[qoute_number];
+    </script>
 
 
 <!--Start of Tawk.to Script-->
