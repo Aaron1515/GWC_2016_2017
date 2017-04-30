@@ -17,37 +17,36 @@
   }
   #Entire {
      background-color:rgb(224, 146, 224);
-     margin-top:20%;
-  
+     margin-top:10%
   }
  #tagline{
        background-color:rgb(190, 139, 207);
        margin-top:-35px;
  }
-   #anotherone{
+  #anotherone{
     text-align:center; 
     font-size:12;
     font-family:impact;
     color:rgb(71, 71, 71);
    }
-   #BLAH {
+  #BLAH {
        background-color:rgb(151, 212, 217);
        margin-top:-166px;
    }
-   #YA {
+  #YA {
        background-color:rgb(102, 180, 196);
        margin-top: 191px;
    }
-   #ANOTHER
+  #ANOTHER
    {
     background-color:rgb(102, 180, 196);  
    }
-   #Toppings{
+  #Toppings{
     margin-top: -313px;
     background-color:white;
     border-radius:8px;
    }
-   .top{
+  .top{
     display:inline-block; 
     margin-left:120px;
   }
@@ -82,39 +81,52 @@
     margin-top:-223px;
   }
 
-  #logo{text-align: center;
-      margin-top:-770px;} 
+  div#logo{
+  } 
 
   </style>
+
+
+  
+
         
     <!--Profile name and intro-->
-        <div id = "Entire">
-            <h1 id="Name">[Name here]</h1>
-        </div>
-        <div id="tagline">
-            <p id="anotherone">
-            "If your feeling suicidal, you've come to the right place."-Filthy Frank
-            </p> 
-        </div>
-        <div id = "BLAH">
-            <p id = "ANOTHER">
-            .
-            </p>
-        <div id = "YA">
-            <p>
-            .
-            </p>
-        </div>
-        </div>
+    <div style="text-align: center;">
+      <img  src="https://d1b10bmlvqabco.cloudfront.net/attach/iud12iv5jgu334/iu7z8oqsvsu1h2/j0r8u33rfov6/imageedit_1_9215536154.png" height="250" width="250">
+    </div>
+
+
+    <div id="Entire">
+        <% if @user.member && @user.member.first_name %>
+          <h1 id="Name">Welcome <%= @user.member.first_name %></h1>
+        <% else %>
+          <h1 id="Name">Anonymous</h1>
+        <% end %>
+    </div>
+
+    <div id="tagline">
+        <p id="anotherone">
+        "If your feeling suicidal, you've come to the right place."-Filthy Frank
+        </p> 
+    </div>
+
+    <div id = "BLAH">
+        <p id = "ANOTHER">
+        .
+        </p>
+    <div id = "YA">
+        <p>
+        .
+        </p>
+    </div>
+    </div>
 
 
   <div id="Toppings">
 <p class="top"><u><%= link_to "Profile", welcome_index_path %></u></p>
   <!-- <p class="top"><a href="#Home"><u>Home</u></a></p> -->
   <p class="top"><u><%= link_to "Communities", welcome_community_path %></u></p>
-  <!-- <p class="top"><a href="#Communities"><u>Communities</u></a></p> -->
-  <p class="top"><u><%= link_to "Personal Info", personal_info_index_path %></u></p>
-  <!-- <p class="top"><a href="#Settings"><u>Personal Info</u></a></p> -->
+  <p class="top"><u><%= link_to "Personal Info", edit_personal_info_path(@user) %></u></p>
   <p class="top"><a href="#Chatrooms"><u>Chatrooms</u></a></p>
   <p class="top"><a href="#Donate/Contact"><u>Donate/Contact</u></a></p>
   <p class="top"><%= link_to "Sign out", destroy_user_session_url, method: :delete %></p>
@@ -168,8 +180,7 @@
     </div>
 
 
-    <div id="logo">
-    <img src="https://d1b10bmlvqabco.cloudfront.net/attach/iud12iv5jgu334/iu7z8oqsvsu1h2/j0r8u33rfov6/imageedit_1_9215536154.png" width="300" height="300">
+    
     </div>
     </div> 
 

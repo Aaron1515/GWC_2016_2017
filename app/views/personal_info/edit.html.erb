@@ -63,7 +63,7 @@ body{
 
 
 
-<h1>Test <%= @member.first_name %> </h1>
+<h1>edit page <%= @member.first_name %> </h1>
 
 <!-- HTML -->
 <h2>Onto the next step...</h2>
@@ -108,6 +108,7 @@ body{
 <div>
 
   <%= form_for :@member do |f| %>
+
     First Name: <%= f.text_field :first_name %>
     Age: <%= f.text_field :age %>
     Gender: <%= f.text_field :gender %>
