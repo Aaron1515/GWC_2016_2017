@@ -4,6 +4,25 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
+    <div>     
+      <label for="fname">First Name</label>
+      <input type="text" id="1name" name="firstname" placeholder="Your name...">
+    </div>
+
+    <div>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    </div>
+
+    <div>
+      <label for="user">Username</label>
+      <input type="text" id="user" name="Username" placeholder="Choose a username...">
+    </div>
+
+
+
+
+
     <div class="email_field">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, class: "input_text" %>
@@ -20,6 +39,18 @@
     <div class="password_field">
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation, autocomplete: "off", class: "input_text" %>
+    </div>
+
+    <div>
+    <label for="continent">Continent</label>
+    <select id="continent" name="continent">
+      <option value="North America">North America</option>
+      <option value="South America">South America</option>
+      <option value=Africa>Africa</option>
+      <option value=Europe>Europe</option>
+      <option value=Asia>Asia</option>
+      <option value=Australia>Australia</option>
+    </select>
     </div>
 
     <div class="actions submit_btn">
