@@ -131,6 +131,7 @@
           <h1 id="Name">Anonymous</h1>
         <% end %>
     </div>
+
     
         <div id="tagline">
             <p id="anotherone">
@@ -192,6 +193,22 @@
     <img src="https://d1b10bmlvqabco.cloudfront.net/attach/iud12iv5jgu334/iu7z8oqsvsu1h2/j0r8u33rfov6/imageedit_1_9215536154.png" width="350" height="350">
     </div>
 
+
+    Testing Random Qoutes
+    <script type="text/javascript">
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    var qoutes = ["Don't cry because it's over, smile because it happened. ― Dr. Seuss", "If your feeling suicidal, you've come to the right place. -Filthy Frank", "Be yourself; everyone else is already taken. ― Oscar Wilde", 'You only live once, but if you do it right, once is enough. ― Mae West', 'Be the change that you wish to see in the world. ― Mahatma Gandhi', "In three words I can sum up everything  I've learned about life: it goes on. ― Robert Frost"];
+
+
+    var qoute_number = getRandomInt(0, qoutes.length);
+
+    document.getElementById("anotherone").innerHTML = qoutes[qoute_number];
+    </script>
 
 
 <!--Start of Tawk.to Script-->
