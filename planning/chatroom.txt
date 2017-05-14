@@ -1,0 +1,35 @@
+
+b157109@mvrht.net
+
+accounts@mibbit.comWelcome to Mibbit - Widget Manager & code.May 14, 2017 12:56:06 PM
+ 
+Hi Sharinghands, Welcome to Mibbit! 
+
+Thanks for signing up, now lets help you get started.
+
+
+Copy & paste the following code to your website: 
+<iframe width=570 height=340 border=0 frameborder=none src="http://widget.mibbit.com/?settings=c4c6efc468d6fca10c1af4ba48b1155f&server=irc.mibbit.net&channel=%23Sharinghands_test_channel"></iframe> 
+
+
+Or click this link to test in your browser; 
+http://widget.mibbit.com/?settings=c4c6efc468d6fca10c1af4ba48b1155f&server=irc.mibbit.net&channel=%23Sharinghands_test_channel
+
+Your widget profile needs completing, click here to verify your account details. 
+
+Watch the quick guide to how to embed your widget: 
+
+It is important that the &settings= ID is included - this tells Mibbit to load your settings.
+Your settings ID is c4c6efc468d6fca10c1af4ba48b1155f
+
+Housekeeping:
+We do not spam or share your address with anyone, but we will send out the odd e-mail about updates and things. If you would prefer not to receive anything click the link at the bottom of this mail to unsubscribe.
+By using Mibbit you agree to our most interesting Terms of Service, take a moment to check. More importantly we take steps to ensure Mibbit and Mibbit users respect your privacy, take a look at our policy here.
+Just a note on the network Rules; we want every Mibbit user to have a great experience chatting and sharing interests with other people but beware of Trolls and impersonators. We monitor and moderate the channels #chat, #mibbit and #help but generally all other channels are moderated by the channel operators, if you have a grievance take it up with a channel op in the first instance.
+© Mibbit 2011. Terms Privacy Report abuse Unsubscribe
+SUPPORT 10MINUTEMAILPayPal - The safer, easier way to pay online!
+BITCOIN 1NzuibHrygH1i4Wvzv5X5kX3vip9CFpS3b ACCOLADES | F.A.Q.
+BLOG ENTRIES ABOUT | PRIVACY POLICY
+DESIGNED BY BYTECUBE CREATED BY DEVON HILLARD
+DEVON HILLARD @ DIGITALSANCTUARY 
+COPYRIGHT 2007-2017
