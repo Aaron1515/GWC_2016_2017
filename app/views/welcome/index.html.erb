@@ -2,130 +2,139 @@
 <% if @user %>
 
 
-        <style>
-            body{background-color: pink;}
-            #Name {
-                font-family:gigi;
-                color:rgb(110, 110, 110);
-                font-size:56px;
-                text-align:center;
-            }
-            #Entire {
-               background-color:rgb(224, 146, 224);
-               margin-top:30%;
-            
-            }
-           #tagline{
-                 background-color:rgb(190, 139, 207);
-                 margin-top:-35px;
-           }
-           #anotherone{
-            text-align:center; 
-            font-size:12;
-            font-family:impact;
-            color:rgb(71, 71, 71);
-           }
-           #BLAH {
-               background-color:rgb(151, 212, 217);
-               margin-top:-166px;
-           }
-           #YA {
-               background-color:rgb(102, 180, 196);
-               margin-top: 191px;
-           }
-           #ANOTHER
-           {
-            background-color:rgb(102, 180, 196);  
-           }
-           #Toppings{
-            margin-top: -313px;
-            background-color:white;
-            border-radius:8px;
-           }
-           .top{
-            display:inline-block; 
-            margin-left:120px;
-            }
-           
-           .profile-pic{
-               margin-left: 310px;
-               margin-top: -225px;
-           }
+  <style>
+    body{background-color: pink;}
+      
+    #Name {
+          font-family:gigi;
+          color:rgb(110, 110, 110);
+          font-size:56px;
+          text-align:center;
+    }
+      
+    #Entire {
+         background-color:rgb(224, 146, 224);
+         margin-top:30%;
+      }
+     
+     #tagline{
+           background-color:rgb(190, 139, 207);
+           margin-top:-35px;
+     }
 
-           #friendzone{
-           margin-top: -1200px;
-           margin-left: 450px;
-           font-size: 100px;    
-           }
-            #facts{
-               margin-top:580px;
-               background-color:white;
-               margin-right:700px;
-               border-radius:10px;
-           }
-            .Sandy{
-              margin-top:890px;    
-            }
-            .Something {
-            margin-top:-225px;
-            margin-left: 620px;
-            }
-            .Lalala {
-                margin-left: 927px;
-                margin-top:-223px;
-            }
+     #anotherone{
+      text-align:center; 
+      font-size:12;
+      font-family:impact;
+      color:rgb(71, 71, 71);
+     }
 
-            #logo{
-                text-align: center;
-                 margin-top:-940px;}
+     #BLAH {
+         background-color:rgb(151, 212, 217);
+         margin-top:-166px;
+     }
 
-            #signout{
-                margin-left: 1270px;
-                margin-top: -225px;
-            }     
-            
-            .open {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333;
-               margin-top: -313px;
-            }
+     #YA {
+         background-color:rgb(102, 180, 196);
+         margin-top: 191px;
+     }
 
-            li {
-              float: left;
-              display:inline;
-              padding: 0px 20px;
+     #ANOTHER
+     {
+      background-color:rgb(102, 180, 196);  
+     }
 
-            }
+     #Toppings{
+      margin-top: -313px;
+      background-color:white;
+      border-radius:8px;
+     }
 
-            li a {
-              display: block;
-              color: white;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-            }
+     .top{
+      display:inline-block; 
+      margin-left:120px;
+      }
+     
+     .profile-pic{
+         margin-left: 310px;
+         margin-top: -225px;
+     }
 
-            li a:hover:not(.active) {
-              background-color: #111;
+     #friendzone{
+     margin-top: -1200px;
+     margin-left: 450px;
+     font-size: 100px;    
+     }
 
-            }
-            
-            .active {
-              background-color: DarkTurquoise;
-            }
-  
-           
-        </style>
+    #facts{
+         margin-top:580px;
+         background-color:white;
+         margin-right:700px;
+         border-radius:10px;
+     }
+      .Sandy{
+        margin-top:890px;    
+      }
+      .Something {
+      margin-top:-225px;
+      margin-left: 620px;
+      }
+      .Lalala {
+          margin-left: 927px;
+          margin-top:-223px;
+      }
+
+      #logo{
+          text-align: center;
+           margin-top:-940px;}
+
+      #signout{
+          margin-left: 1270px;
+          margin-top: -225px;
+      }     
+      
+      .open {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+         margin-top: -313px;
+      }
+
+      li {
+        float: left;
+        display:inline;
+        padding: 0px 20px;
+
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+
+      }
+      
+      .active {
+        background-color: DarkTurquoise;
+      }
+
+     
+  </style>
         
 
 
 
     <!--Profile name and intro-->
     <div id="Entire">
-        <% if @user.member && @user.member.first_name %>
+        <%  if false #@user.member && @user.member.first_name %>
           <h1 id="Name">Welcome <%= @user.member.first_name %></h1>
         <% else %>
           <h1 id="Name">Anonymous</h1>
