@@ -2,100 +2,128 @@
 <% if @user %>
 
 
-
-  <style>
-
-  body{
-    background-color: pink;
-  }
-
-  #Name {
-      font-family: gigi;
-      color:rgb(110, 110, 110);
-      font-size:56px;
-      text-align:center;
-  }
-  #Entire {
-     background-color:rgb(224, 146, 224);
-     margin-top:10%
-  }
- #tagline{
-       background-color:rgb(190, 139, 207);
-       margin-top:-35px;
- }
-  #anotherone{
-    text-align:center; 
-    font-size:12;
-    font-family:impact;
-    color:rgb(71, 71, 71);
-   }
-  #BLAH {
-       background-color:rgb(151, 212, 217);
-       margin-top:-166px;
-   }
-  #YA {
-       background-color:rgb(102, 180, 196);
-       margin-top: 191px;
-   }
-  #ANOTHER
-   {
-    background-color:rgb(102, 180, 196);  
-   }
-  #Toppings{
-    margin-top: -313px;
-    background-color:white;
-    border-radius:8px;
-   }
-  .top{
-    display:inline-block; 
-    margin-left:120px;
-  }
+        <style>
+            body{background-color: pink;}
+            #Name {
+                font-family:gigi;
+                color:rgb(110, 110, 110);
+                font-size:56px;
+                text-align:center;
+            }
+            #Entire {
+               background-color:rgb(224, 146, 224);
+               margin-top:30%;
+            
+            }
+           #tagline{
+                 background-color:rgb(190, 139, 207);
+                 margin-top:-35px;
+           }
+           #anotherone{
+            text-align:center; 
+            font-size:12;
+            font-family:impact;
+            color:rgb(71, 71, 71);
+           }
+           #BLAH {
+               background-color:rgb(151, 212, 217);
+               margin-top:-166px;
+           }
+           #YA {
+               background-color:rgb(102, 180, 196);
+               margin-top: 191px;
+           }
+           #ANOTHER
+           {
+            background-color:rgb(102, 180, 196);  
+           }
+           #Toppings{
+            margin-top: -313px;
+            background-color:white;
+            border-radius:8px;
+           }
+           .top{
+            display:inline-block; 
+            margin-left:120px;
+            }
            
-  #profile-pic{
-  margin-left: 360px;
-  margin-top: -224px;
-  }
+           .profile-pic{
+               margin-left: 310px;
+               margin-top: -225px;
+           }
 
-  #friendzone{
-  margin-top: -1200px;
-  margin-left: 450px;
-  font-size: 100px;  
-  }
-  #facts{
-     margin-top:580px;
-     background-color:white;
-     margin-right:700px;
-     border-radius:10px;
-  }
-  #Sandy{
-  margin-top:450px; 
-  margin-left:49px;
+           #friendzone{
+           margin-top: -1200px;
+           margin-left: 450px;
+           font-size: 100px;    
+           }
+            #facts{
+               margin-top:580px;
+               background-color:white;
+               margin-right:700px;
+               border-radius:10px;
+           }
+            .Sandy{
+              margin-top:890px;    
+            }
+            .Something {
+            margin-top:-225px;
+            margin-left: 620px;
+            }
+            .Lalala {
+                margin-left: 927px;
+                margin-top:-223px;
+            }
 
-  }
-  #Something {
-  margin-top:-225px;
-  margin-left: 670px;
-  }
-  #Lalala {
-    margin-left: 980px;
-    margin-top:-223px;
-  }
+            #logo{
+                text-align: center;
+                 margin-top:-940px;}
 
-  div#logo{
-  } 
+            #signout{
+                margin-left: 1270px;
+                margin-top: -225px;
+            }     
+            
+            .open {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+               margin-top: -313px;
+            }
 
-  </style>
+            li {
+              float: left;
+              display:inline;
+              padding: 0px 20px;
 
+            }
 
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+              background-color: #111;
+
+            }
+            
+            .active {
+              background-color: DarkTurquoise;
+            }
   
-
+           
+        </style>
         
+
+
+
     <!--Profile name and intro-->
-    <div style="text-align: center;">
-      <img  src="https://d1b10bmlvqabco.cloudfront.net/attach/iud12iv5jgu334/iu7z8oqsvsu1h2/j0r8u33rfov6/imageedit_1_9215536154.png" height="250" width="250">
-    </div>
-
-
     <div id="Entire">
         <% if @user.member && @user.member.first_name %>
           <h1 id="Name">Welcome <%= @user.member.first_name %></h1>
@@ -103,86 +131,67 @@
           <h1 id="Name">Anonymous</h1>
         <% end %>
     </div>
-
-    <div id="tagline">
-        <p id="anotherone">
-        "If your feeling suicidal, you've come to the right place."-Filthy Frank
-        </p> 
-    </div>
-
-    <div id = "BLAH">
-        <p id = "ANOTHER">
-        .
-        </p>
-    <div id = "YA">
-        <p>
-        .
-        </p>
-    </div>
-    </div>
-
-
-  <div id="Toppings">
-<p class="top"><u><%= link_to "Profile", welcome_index_path %></u></p>
-  <!-- <p class="top"><a href="#Home"><u>Home</u></a></p> -->
-  <p class="top"><u><%= link_to "Communities", welcome_community_path %></u></p>
-  <p class="top"><u><%= link_to "Personal Info", edit_personal_info_path(@user) %></u></p>
-  <p class="top"><a href="#Chatrooms"><u>Chatrooms</u></a></p>
-  <p class="top"><a href="#Donate/Contact"><u>Donate/Contact</u></a></p>
-  <p class="top"><%= link_to "Sign out", destroy_user_session_url, method: :delete %></p>
-  </div>
-
-
+    
+        <div id="tagline">
+            <p id="anotherone">
+            Dream as if you will live forever. Live as if you are going to die.
+            </p> 
+        </div>
+        <div id = "BLAH">
+            <p id = "ANOTHER">
+            .
+            </p>
+        <div id = "YA">
+            <p>
+            .
+            </p>
+        </div>
+        </div>
+      
+        
+  <ul class="open">
+    <li><%= link_to "Profile", welcome_index_path %></li>
+    <li><%= link_to "Communities", welcome_community_path %></li>
+    <li><%= link_to "Personal Info", edit_personal_info_path(@user) %></li>
+    <li><%= link_to "Chatroom", welcome_chatroom_path %></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#carrers">Careers</a></li>
+    <li><a href="#chat">Donate/Contact</a></li>
+    <li><%= link_to "Sign out", destroy_user_session_url, method: :delete %></li>
+  </ul>
+        
+        
     <div id="facts">    
     <h1> Facts </h1>
-    <ul>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>   
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>   
-     <li>things</li>
-     <li>things</li> 
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>
-     <li>things</li>   
-     <li>things</li>
-     <li>things</li> 
-    </ul>
+    <p>
+     fufufu
+    </p>
     </div>
 
    
-  <!--Name of site-->    
-  <p id="friendzone"> </p>
+    <!--Name of site-->    
+    <p id="friendzone"> </p>
 
-   <div id = "Sandy">
+    <div class = "Sandy">
     <img src="http://intuitivecreativity.typepad.com/.a/6a00d83451dc5b69e201bb087309e5970d-pi" width="300" height="220">
     </div>
 
-     <div id="profile-pic">
+     <div class ="profile-pic">
     <img src="http://www.immotourisme.com/location-gerance/wp-content/uploads/2016/04/1470.jpg" width="300" height="220">
     </div>
 
-    <div id="Something">
+    <div class ="Something">
     <img src="http://fanaru.com/konosuba-gods-blessing-on-this-wonderful-world/image/255644-konosuba-gods-blessing-on-this-wonderful-world-megumin-explosion.jpg" width="300" height="220"></div>
 
-    <div id="Lalala">
+    <div class ="Lalala">
     <img src="https://img.clipartfest.com/31f25adb273153ce00d7bb64bc39a5ee_whats-coding-got-to-do-with-coding_1920-1200.jpeg" width="300" height="220">
     </div>
 
 
-    
+    <div id="logo">
+    <img src="https://d1b10bmlvqabco.cloudfront.net/attach/iud12iv5jgu334/iu7z8oqsvsu1h2/j0r8u33rfov6/imageedit_1_9215536154.png" width="350" height="350">
     </div>
-    </div> 
+
 
 
 <!--Start of Tawk.to Script-->

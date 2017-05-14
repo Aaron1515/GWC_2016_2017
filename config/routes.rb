@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   get 'welcome/community'
+  get 'welcome/chatroom'
 
   resources :personal_info
 
